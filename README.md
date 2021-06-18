@@ -66,6 +66,12 @@ CREATE TABLE tbContato (
 ```
 ### Agora o servidor se inicializou na máquina local. Entre na URL *https://localhost:8000/* para acessar o projeto.
 
+--- 
+
+
+# Status do projeto:🚧 Em andamento... 🚧
+
+
 ---
 Licença MIT ©
 
