@@ -1,0 +1,152 @@
+body {
+    background: rgb(95, 158, 252);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* nav-bar*/
+a {
+    text-decoration: none;
+}
+
+header {
+    align-items: center;
+}
+
+ul {
+    border: 1px solid #e7e7e7;
+    display: flex;
+    justify-content: center;
+
+    width: 50%;
+    margin: auto;
+    padding: 0;
+
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #f3f3f3;
+
+    border-radius: 1rem;
+}
+
+li {
+    float: left;
+    border-right: 0.0625rem solid #bbb;
+}
+
+li:last-child {
+    border-left: 0.0625rem solid #bbb;
+    border-right: none;
+    float: right;
+}
+
+li a {
+    display: block;
+    color: #666;
+    padding: 0.5rem;
+    text-align: center;
+    padding: 0.875rem 1rem;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+li a:hover {
+    background-color: rgb(134, 133, 133);
+    color: white;
+}
+
+/* contatos */
+.contatos {
+    margin: 5rem auto;
+    width: 50%;
+
+    border-radius: 0.3125rem;
+    background-color: #8be6e6;
+    padding: 1.25rem;
+}
+
+#contacts {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #dcdddd;
+}
+
+#contacts th, #contacts td {
+    border: 0.0625rem solid #ddd;
+    padding: 0.7rem;
+}
+
+#contacts tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+#contacts tr:hover {
+    background-color: rgb(179, 179, 179);
+}
+
+#contacts th {
+    padding-top: 12px 0px 12px 0px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: #fff;
+}
+
+td a:hover {
+    font-size: 0.9375rem;
+    font-weight: bold;
+}
+
+/* form */
+.form {
+    margin: 5rem auto;
+    width: 50%;
+
+    border-radius: 0.3125rem;
+    background-color: #dddcdc;
+    padding: 1.25rem;
+
+}
+
+input[type=text], input[type=email], textarea, select {
+    width: 100%;
+    padding: 0.75rem 0.75rem;
+    margin: 0.5rem;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.875rem 1.25rem;;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+
+    transition: all 0.3s;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* footer */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    background-color: #333;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    color: white;
+    padding: 8px;
+}
