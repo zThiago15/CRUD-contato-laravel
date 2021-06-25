@@ -66,6 +66,24 @@ CREATE TABLE tbContato (
 ```
 ### Agora o servidor se inicializou na máquina local. Entre na URL *https://localhost:8000/* para acessar o projeto.
 
+## Retornando dados via JSON (Anotação 📝)
+    Adicionamos uma rota que irá fazer uma requisição GET e retornar por um método do *controller* todos os dados da tabela via JSON. 
+
+### Função para retornar os dados com JSON
+```php
+    function retornarJSON() {
+        return response()->json(
+            ContatoModel::get, 200, 
+        );
+    }
+```
+
+### Parâmetros
+* __*ContatoModel::get*__ -> retorna os dados da tabela registrada;
+* __*200*__ -> Status code, quer dizer que a requisição foi retornada com sucesso;
+* __*['Content-Type' => 'application/json;charset=UTF-8', 'Charset' => 'utf-8'], JSON_UNESCAPED_UNICODE*__-> retorna os dados com acentuação.
+
+
 ---
 Licença MIT ©
 

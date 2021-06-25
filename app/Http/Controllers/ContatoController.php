@@ -115,4 +115,11 @@ class ContatoController extends Controller
         $contatos = ContatoModel::where('idContato', $id)->delete();
         return redirect()->action('App\Http\Controllers\ContatoController@exibirContatos');
     }
+
+    public function showJSON()
+    {
+        return response()->json(
+            ContatoModel::get(),200, ['Content-Type' => 'application/json;charset=UTF-8', 'Charset' => 'utf-8'], JSON_UNESCAPED_UNICODE
+        );
+    }
 }

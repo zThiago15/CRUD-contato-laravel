@@ -31,6 +31,8 @@ Route::get('editar-contato/{id}', 'App\Http\Controllers\ContatoController@edit')
 
 Route::post('alterar-contato/{id}', 'App\Http\Controllers\ContatoController@update');
 
+Route::get('contatos-json', 'App\Http\Controllers\ContatoController@showJSON');
+
 
 Route::get('/quemsomos', function(){
     return view('quemsomos');
