@@ -83,7 +83,6 @@ CREATE TABLE tbContato (
 * __*200*__ -> Status code, quer dizer que a requisição foi retornada com sucesso;
 * __*['Content-Type' => 'application/json;charset=UTF-8', 'Charset' => 'utf-8'], JSON_UNESCAPED_UNICODE*__-> retorna os dados com acentuação.
 
-
 ---
 Licença MIT ©
 
